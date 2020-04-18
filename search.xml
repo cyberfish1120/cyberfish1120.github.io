@@ -53,7 +53,7 @@
 </blockquote>
 </blockquote>
 <p>代码：<br><code>printf()</code></p>
-<figure class="highlight c++"><figcaption><span>&#123;.line-numbers&#125;</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a;</span><br><span class="line"><span class="keyword">int</span> b;</span><br><span class="line"><span class="keyword">int</span> c=a+b;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;c&lt;&lt;<span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a;</span><br><span class="line"><span class="keyword">int</span> b;</span><br><span class="line"><span class="keyword">int</span> c=a+b;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;c&lt;&lt;<span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a;</span><br><span class="line"><span class="keyword">int</span> b;</span><br><span class="line"><span class="keyword">int</span> c=a+b;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;c&lt;&lt;<span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
 
 <p>链接：<br><a href="my-new-post.md">这是一个链接</a><br>或者<br><a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a></p>
