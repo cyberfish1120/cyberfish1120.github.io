@@ -123,4 +123,37 @@
         <tag>算法</tag>
       </tags>
   </entry>
+  <entry>
+    <title>临界矩阵的DFS、BFS参数配置</title>
+    <url>/2020/04/20/%E4%B8%B4%E7%95%8C%E7%9F%A9%E9%98%B5%E7%9A%84DFS%E3%80%81BFS%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>不管是树还是图，<strong>DFS</strong>都是基于  <strong>递归</strong>  编写的，<br>                               <strong>BFS</strong>是基于  <strong>队列</strong>  编写的。</p>
+<p>对于<strong>树</strong>来说，因为其<strong>具有</strong>的<strong>父与子</strong>的层次结构，DFS和BFS按上下次序遍历即可；</p>
+<p>而对于<strong>图</strong>，其结构是<strong>无上下层次</strong>的，顾在对其遍历时，我们会<strong>设置一个bool数组</strong>来记录结点是否已访问，以避免重复遍历。</p>
+<h3 id="邻接矩阵版-DFS、BFS代码编写的一些细节记录："><a href="#邻接矩阵版-DFS、BFS代码编写的一些细节记录：" class="headerlink" title="邻接矩阵版  DFS、BFS代码编写的一些细节记录："></a><em>邻接矩阵版</em>  DFS、BFS代码编写的一些细节记录：</h3><p>代码中有两种参数需要注意：<strong>node型的点</strong>和<strong>int型的点</strong></p>
+<p>而需注意传参的函数有<strong>bool judge()</strong>和<strong>void BFS()/DFS()</strong>。</p>
+<p>​        首先两者的<strong>bool judge(int x,int y)</strong>适用传入x，y值</p>
+<p>​        而对于<strong>BFS()和DFS()</strong>函数的参数则没有限制，传<strong>单int</strong>(int v)、<strong>node</strong>或者<strong>双int</strong>(int x,int y)都行。</p>
+<p>但node型结构体都得定义。</p>
+<p>如何将  <strong>双int型(x,y)</strong>  或  <strong>单int型int v</strong>  匹配到<strong>node型</strong>呢？</p>
+<p>​        1.对于传x,y的BFS，node只作为队列的变量，如下</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFS</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">	<span class="built_in">queue</span>&lt;node&gt; Q;</span><br><span class="line">	node Node;</span><br><span class="line">	Node.x=x,Node.y=y;</span><br><span class="line">	Q.push(Node);</span><br><span class="line">    flag[x][y]=<span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">while</span>(!Q.empty())&#123;</span><br><span class="line">     ...   </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里node的作用仅是用来便于存储队列里的(x,y)点；</p>
+<p>​        2.对于传node的BFS，</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFS</span><span class="params">(node S)</span></span>&#123;</span><br><span class="line">	<span class="built_in">queue</span>&lt;node&gt; Q;</span><br><span class="line">	Q.push(S);</span><br><span class="line">	<span class="keyword">while</span>(!Q.empty())&#123;</span><br><span class="line">		...</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>由此可见，<strong>queue Q里永远存的是node型</strong>，但如果直接传node型，将难以记录<strong>连通块</strong>的个数</p>
+<p>总结：</p>
+<p>​    对于大多数情况：bool judge的参数为(int x,int y);</p>
+<p>​                                    DFS<strong>两种都行</strong>(int x,int y)/DFS(int v),分别对应<strong>bool flag[x] [y]</strong>和<strong>bool flag[v]</strong>;  </p>
+<p>​                                    BFS也是<strong>两种都行</strong>(int x,int y)/BFS(int v),如上。</p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>BFS</tag>
+        <tag>DFS</tag>
+      </tags>
+  </entry>
 </search>
