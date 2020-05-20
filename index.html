@@ -193,6 +193,170 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/05/%E7%94%A8MarkDown%E5%8F%AF%E4%BB%A5%E5%81%9A%E4%BB%80%E4%B9%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="CyberFish">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CyberFish">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/05/%E7%94%A8MarkDown%E5%8F%AF%E4%BB%A5%E5%81%9A%E4%BB%80%E4%B9%88/" class="post-title-link" itemprop="url">用Markdown可以做什么</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-05 20:59:22 / 修改时间：21:18:34" itemprop="dateCreated datePublished" datetime="2020-05-05T20:59:22+08:00">2020-05-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>你是否遇到这些问题：写报告需要打开Word/PPT，每次浪费不少时间在排版上？写博客需要在管理后台网页里排版？在这篇文章里我将会介绍如何使用一种纯文本标记语言Markdown去排版各类型文档。</p>
+<p>本文大纲如下：</p>
+<ul>
+<li>基于Markdown的工作流</li>
+<li>用Markdown生成笔记/博客/幻灯片/专业报告</li>
+</ul>
+<p>开始之前，如果觉得本文不错，可以分享给你的朋友。让我们开始吧！</p>
+<h2 id="基于Markdown的工作流"><a href="#基于Markdown的工作流" class="headerlink" title="基于Markdown的工作流"></a>基于Markdown的工作流</h2><h3 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h3><p>Markdown由 John Gruber 于 2004 年创立，它是一种纯文本标记语言，实际上这篇文章排版就是用Markdown生成的，在这里可以看到它的<a href="https://raw.githubusercontent.com/bmpi-dev/bmpi.dev/master/content/dev/what-markdown-can-do/index.zh-cn.md" target="_blank" rel="noopener">源文件</a>[^0]。</p>
+<p><img src="https://img.bmpi.dev/602bfd5d-0b33-390e-18e2-a61816d4e788.png" alt=""></p>
+<p>在这里可以体验下Markdown的具体用法：<a href="https://wechat.bmpi.dev" target="_blank" rel="noopener">微信公众号Markdown在线排版</a>[^1]</p>
+<h3 id="Markdown工作流"><a href="#Markdown工作流" class="headerlink" title="Markdown工作流"></a>Markdown工作流</h3><p><img src="https://img.bmpi.dev/4ba9bba0-d63c-a2e7-b02f-ab48fcf64b08.png" alt=""></p>
+<p>上述思维导图使用VSCode插件<a href="https://plantuml.com/zh/" target="_blank" rel="noopener"><code>PlantUML</code></a>[^2]预览纯文本生成的，纯文本如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@startmindmap</span><br><span class="line">skinparam monochrome true</span><br><span class="line">* Markdown排版</span><br><span class="line">** 写作</span><br><span class="line">*** 博客</span><br><span class="line">*** 知乎专栏</span><br><span class="line">*** 微信公众号</span><br><span class="line">** 幻灯片</span><br><span class="line">** 专业报告</span><br><span class="line">** 笔记</span><br><span class="line">@endmindmap</span><br></pre></td></tr></table></figure>
+
+<h2 id="用Markdown记录笔记"><a href="#用Markdown记录笔记" class="headerlink" title="用Markdown记录笔记"></a>用Markdown记录笔记</h2><p><img src="https://img.bmpi.dev/41c4f964-08da-f54a-8946-35added31be0.png" alt=""></p>
+<p>如上图红框，我一般将某个主题相关的笔记用一个Markdown记录，放入相应类别的目录。比如学习类别中，关于SEO的学习资料都会放入<code>seo_study.md</code>，所有学习的md文件都放入<code>study</code>目录。</p>
+<h2 id="用Markdown生成博客"><a href="#用Markdown生成博客" class="headerlink" title="用Markdown生成博客"></a>用Markdown生成博客</h2><p>本博客使用基于Markdown的<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>[^3]程序生成，源文件都托管至<a href="https://github.com/bmpi-dev/bmpi.dev" target="_blank" rel="noopener">GitHub仓库</a>[^4]，最后用<a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>[^5]服务发布至网上。</p>
+<p>所以写作的流程一般是：</p>
+<ol>
+<li>用Markdown写一篇新文章。</li>
+<li>将新文章使用<code>git push</code>推送到GitHub仓库。</li>
+<li>Netlify会自动触发构建从而将新文章上线到网站。</li>
+<li>将博客新文章复制到微信公众号/知乎专栏/其他社区同步发布。</li>
+</ol>
+<h2 id="用Markdown生成幻灯片"><a href="#用Markdown生成幻灯片" class="headerlink" title="用Markdown生成幻灯片"></a>用Markdown生成幻灯片</h2><p>本博客的<a href="https://talk.bmpi.dev/" target="_blank" rel="noopener">Talk子域名</a>[^6]也是用Hugo的一个<a href="https://reveal-hugo.dzello.com/#/" target="_blank" rel="noopener">Slide主题</a>[^7]搭建，源码存放于这个<a href="https://github.com/bmpi-dev/talk.bmpi.dev" target="_blank" rel="noopener">GitHub仓库</a>[^8]。</p>
+<p><img src="https://img.bmpi.dev/hugo-slide-preview.gif" alt=""></p>
+<p>用Markdown写PPT的好处在于不需要耗费很多时间去排版，再次修改也是对纯文本的更改，缺点是你需要花一点时间（不超过一小时）去学习一些规则。我觉得这是一笔值得的投资，一次投资，终生受益。</p>
+<p>该主题还支持幻灯片导出成PDF格式。只需要加<code>?print-pdf</code>后缀到网址URL后面即可。</p>
+<h2 id="用Markdown生成专业报告"><a href="#用Markdown生成专业报告" class="headerlink" title="用Markdown生成专业报告"></a>用Markdown生成专业报告</h2><p><img src="https://img.bmpi.dev/dc89a01a-b143-3770-e848-4f3e35dbfd2b.png" alt=""></p>
+<p>如何用Markdown生成如上这种学术期刊类的报告呢？</p>
+<p>这需要我们做一些基本的设置，详细的安装设置可以参考我的笔记<a href="https://wiki.bmpi.dev/#%E4%BD%BF%E7%94%A8PanDoc%E5%B0%86Markdown%E8%BD%AC%E5%8C%96%E6%88%90Latex%E5%AD%A6%E6%9C%AF%E6%9C%9F%E5%88%8APDF%E6%A8%A1%E7%89%88" target="_blank" rel="noopener">《使用PanDoc将Markdown转化成Latex学术期刊PDF模版》</a>[^9]</p>
+<p>设置好后，可以按照下面的格式：</p>
+<p><img src="https://img.bmpi.dev/29853913-24d3-bc66-c540-0ba4f8ff7e6f.png" alt=""></p>
+<p>效果如下：</p>
+<p><img src="https://img.bmpi.dev/5f621ad7-6272-637f-f049-d72811cba39c.png" alt=""></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/05/KMP%E7%AE%97%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="CyberFish">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CyberFish">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/05/KMP%E7%AE%97%E6%B3%95/" class="post-title-link" itemprop="url">KMP算法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-05 19:39:57 / 修改时间：20:57:03" itemprop="dateCreated datePublished" datetime="2020-05-05T19:39:57+08:00">2020-05-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/23/%E6%9D%AD%E7%94%B5%E8%8B%B1%E8%AF%AD%E9%9D%A2%E8%AF%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -216,10 +380,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-04-23 20:06:57 / 修改时间：20:12:58" itemprop="dateCreated datePublished" datetime="2020-04-23T20:06:57+08:00">2020-04-23</time>
+              <time title="创建时间：2020-04-23 20:06:57" itemprop="dateCreated datePublished" datetime="2020-04-23T20:06:57+08:00">2020-04-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-20 19:53:03" itemprop="dateModified" datetime="2020-05-20T19:53:03+08:00">2020-05-20</time>
+              </span>
 
           
 
@@ -239,7 +409,11 @@
 介绍一下你的大学
 你最喜欢的一门课是什么？为什么？
 感兴趣的研究方向
-以后想成为什么，为此你需要怎么做？（研究生计划）</code></pre>
+以后想成为什么，为此你需要怎么做？（研究生计划）</code></pre><p>英语自我介绍：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">	Good morning,every teacher.It&#39;s really agreat honor to have this</span><br><span class="line">opportunity for an interview.And I hope I can make a good performance today. </span><br><span class="line">	First,let me introduce myself briefly.My name is ZZQ,and I am 23 years old. I come from HengYang city, HuNan Province.And I majored in the Internet of things at WuHan University of technology.I was studying at home since I graduated in June 2019. During that time,I finish most of the C Plus programming at PAT.And I do the algorithm problem at leetcode now.I really enjoyed programming,and I hope I can concentrate on study and research in this field in my graduate time.</span><br><span class="line">	OK, that&#39;s all.Thank you very much for your listening and attention.</span><br></pre></td></tr></table></figure>
+
+<p>各位老师早上好，很荣幸能参加贵校的面试。我叫ZZQ，23岁，毕业于武汉理工大学计算机科学与技术学院。</p>
+
       
     </div>
 
@@ -587,7 +761,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -600,7 +774,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

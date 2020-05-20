@@ -22,23 +22,28 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="MarkDown基础语法">
-<meta property="og:url" content="http://yoursite.com/2020/04/17/MarkDown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html">
+  <meta name="description" content="你是否遇到这些问题：写报告需要打开Word&#x2F;PPT，每次浪费不少时间在排版上？写博客需要在管理后台网页里排版？在这篇文章里我将会介绍如何使用一种纯文本标记语言Markdown去排版各类型文档。 本文大纲如下：  基于Markdown的工作流 用Markdown生成笔记&#x2F;博客&#x2F;幻灯片&#x2F;专业报告  开始之前，如果觉得本文不错，可以分享给你的朋友。让我们开始吧！ 基于Markdown的工作流Markdo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Markdown可以做什么">
+<meta property="og:url" content="http://yoursite.com/2020/05/05/%E7%94%A8MarkDown%E5%8F%AF%E4%BB%A5%E5%81%9A%E4%BB%80%E4%B9%88/index.html">
 <meta property="og:site_name" content="CyberFish">
+<meta property="og:description" content="你是否遇到这些问题：写报告需要打开Word&#x2F;PPT，每次浪费不少时间在排版上？写博客需要在管理后台网页里排版？在这篇文章里我将会介绍如何使用一种纯文本标记语言Markdown去排版各类型文档。 本文大纲如下：  基于Markdown的工作流 用Markdown生成笔记&#x2F;博客&#x2F;幻灯片&#x2F;专业报告  开始之前，如果觉得本文不错，可以分享给你的朋友。让我们开始吧！ 基于Markdown的工作流Markdo">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://qiliu.zzqcool.cn/%E4%B8%8B%E8%BD%BD.jfif">
-<meta property="og:image" content="http://yoursite.com/2020/04/17/favicons/android-chrome-512x512.png">
-<meta property="og:image" content="http://qiliu.zzqcool.cn/%E4%B8%8B%E8%BD%BD.jfif">
-<meta property="article:published_time" content="2020-04-17T01:44:43.000Z">
-<meta property="article:modified_time" content="2020-04-18T10:30:39.792Z">
+<meta property="og:image" content="https://img.bmpi.dev/602bfd5d-0b33-390e-18e2-a61816d4e788.png">
+<meta property="og:image" content="https://img.bmpi.dev/4ba9bba0-d63c-a2e7-b02f-ab48fcf64b08.png">
+<meta property="og:image" content="https://img.bmpi.dev/41c4f964-08da-f54a-8946-35added31be0.png">
+<meta property="og:image" content="https://img.bmpi.dev/hugo-slide-preview.gif">
+<meta property="og:image" content="https://img.bmpi.dev/dc89a01a-b143-3770-e848-4f3e35dbfd2b.png">
+<meta property="og:image" content="https://img.bmpi.dev/29853913-24d3-bc66-c540-0ba4f8ff7e6f.png">
+<meta property="og:image" content="https://img.bmpi.dev/5f621ad7-6272-637f-f049-d72811cba39c.png">
+<meta property="article:published_time" content="2020-05-05T12:59:22.000Z">
+<meta property="article:modified_time" content="2020-05-05T13:18:34.389Z">
 <meta property="article:author" content="CyberFish">
 <meta property="article:tag" content="markdown">
-<meta property="article:tag" content="基础语法">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://qiliu.zzqcool.cn/%E4%B8%8B%E8%BD%BD.jfif">
+<meta name="twitter:image" content="https://img.bmpi.dev/602bfd5d-0b33-390e-18e2-a61816d4e788.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/04/17/MarkDown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
+<link rel="canonical" href="http://yoursite.com/2020/05/05/%E7%94%A8MarkDown%E5%8F%AF%E4%BB%A5%E5%81%9A%E4%BB%80%E4%B9%88/">
 
 
 <script id="page-configurations">
@@ -51,7 +56,7 @@
   };
 </script>
 
-  <title>MarkDown基础语法 | CyberFish</title>
+  <title>用Markdown可以做什么 | CyberFish</title>
   
 
 
@@ -200,7 +205,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/17/MarkDown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/05/%E7%94%A8MarkDown%E5%8F%AF%E4%BB%A5%E5%81%9A%E4%BB%80%E4%B9%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -213,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          MarkDown基础语法
+          用Markdown可以做什么
         </h1>
 
         <div class="post-meta">
@@ -222,24 +227,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-04-17 09:44:43" itemprop="dateCreated datePublished" datetime="2020-04-17T09:44:43+08:00">2020-04-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-18 18:30:39" itemprop="dateModified" datetime="2020-04-18T18:30:39+08:00">2020-04-18</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/" itemprop="url" rel="index"><span itemprop="name">知识碎片</span></a>
-                </span>
+              <time title="创建时间：2020-05-05 20:59:22 / 修改时间：21:18:34" itemprop="dateCreated datePublished" datetime="2020-05-05T20:59:22+08:00">2020-05-05</time>
             </span>
 
           
@@ -260,85 +250,41 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="http://qiliu.zzqcool.cn/%E4%B8%8B%E8%BD%BD.jfif" alt=""></p>
-<a id="more"></a>
+        <p>你是否遇到这些问题：写报告需要打开Word/PPT，每次浪费不少时间在排版上？写博客需要在管理后台网页里排版？在这篇文章里我将会介绍如何使用一种纯文本标记语言Markdown去排版各类型文档。</p>
+<p>本文大纲如下：</p>
+<ul>
+<li>基于Markdown的工作流</li>
+<li>用Markdown生成笔记/博客/幻灯片/专业报告</li>
+</ul>
+<p>开始之前，如果觉得本文不错，可以分享给你的朋友。让我们开始吧！</p>
+<h2 id="基于Markdown的工作流"><a href="#基于Markdown的工作流" class="headerlink" title="基于Markdown的工作流"></a>基于Markdown的工作流</h2><h3 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h3><p>Markdown由 John Gruber 于 2004 年创立，它是一种纯文本标记语言，实际上这篇文章排版就是用Markdown生成的，在这里可以看到它的<a href="https://raw.githubusercontent.com/bmpi-dev/bmpi.dev/master/content/dev/what-markdown-can-do/index.zh-cn.md" target="_blank" rel="noopener">源文件</a>[^0]。</p>
+<p><img src="https://img.bmpi.dev/602bfd5d-0b33-390e-18e2-a61816d4e788.png" alt=""></p>
+<p>在这里可以体验下Markdown的具体用法：<a href="https://wechat.bmpi.dev" target="_blank" rel="noopener">微信公众号Markdown在线排版</a>[^1]</p>
+<h3 id="Markdown工作流"><a href="#Markdown工作流" class="headerlink" title="Markdown工作流"></a>Markdown工作流</h3><p><img src="https://img.bmpi.dev/4ba9bba0-d63c-a2e7-b02f-ab48fcf64b08.png" alt=""></p>
+<p>上述思维导图使用VSCode插件<a href="https://plantuml.com/zh/" target="_blank" rel="noopener"><code>PlantUML</code></a>[^2]预览纯文本生成的，纯文本如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@startmindmap</span><br><span class="line">skinparam monochrome true</span><br><span class="line">* Markdown排版</span><br><span class="line">** 写作</span><br><span class="line">*** 博客</span><br><span class="line">*** 知乎专栏</span><br><span class="line">*** 微信公众号</span><br><span class="line">** 幻灯片</span><br><span class="line">** 专业报告</span><br><span class="line">** 笔记</span><br><span class="line">@endmindmap</span><br></pre></td></tr></table></figure>
 
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p><em>斜体</em>  <em>斜体</em><br><strong>粗体</strong> <strong>粗体</strong><br><strong><em>斜粗体</em></strong>  <strong><em>斜粗体</em></strong>  </p>
-<p>我喜欢C++<br>也喜欢python  </p>
-<p>但更经常使用C++</p>
-<hr>
-<p>分割线</p>
-<hr>
-<p><del>删除线</del></p>
-<p><u>下划线</u></p>
-<p>这是一个脚注<a href="1111">^1</a><br>这是第二个脚注<a href="2222">^2</a>  </p>
-<p>无序列表:  </p>
-<ul>
-<li>第一个  </li>
-<li>第二个</li>
-</ul>
-<ul>
-<li>第一个</li>
-<li>第二个</li>
-</ul>
-<ul>
-<li>第一个</li>
-<li>第二个</li>
-</ul>
-<p>有序列表：</p>
+<h2 id="用Markdown记录笔记"><a href="#用Markdown记录笔记" class="headerlink" title="用Markdown记录笔记"></a>用Markdown记录笔记</h2><p><img src="https://img.bmpi.dev/41c4f964-08da-f54a-8946-35added31be0.png" alt=""></p>
+<p>如上图红框，我一般将某个主题相关的笔记用一个Markdown记录，放入相应类别的目录。比如学习类别中，关于SEO的学习资料都会放入<code>seo_study.md</code>，所有学习的md文件都放入<code>study</code>目录。</p>
+<h2 id="用Markdown生成博客"><a href="#用Markdown生成博客" class="headerlink" title="用Markdown生成博客"></a>用Markdown生成博客</h2><p>本博客使用基于Markdown的<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>[^3]程序生成，源文件都托管至<a href="https://github.com/bmpi-dev/bmpi.dev" target="_blank" rel="noopener">GitHub仓库</a>[^4]，最后用<a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>[^5]服务发布至网上。</p>
+<p>所以写作的流程一般是：</p>
 <ol>
-<li>第一个</li>
-<li>第二个<ol>
-<li>此处使用Tab键输入 第2.1个有序子列表</li>
-<li>第2.2个</li>
+<li>用Markdown写一篇新文章。</li>
+<li>将新文章使用<code>git push</code>推送到GitHub仓库。</li>
+<li>Netlify会自动触发构建从而将新文章上线到网站。</li>
+<li>将博客新文章复制到微信公众号/知乎专栏/其他社区同步发布。</li>
 </ol>
-</li>
-<li>第三个<ul>
-<li>键入无序子列表 3.1</li>
-<li>3.2</li>
-</ul>
-</li>
-</ol>
-<p>嵌套：</p>
-<blockquote>
-<p>1</p>
-<blockquote>
-<p>2</p>
-<blockquote>
-<p>3<br>3.1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>代码：<br><code>printf()</code></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a;</span><br><span class="line"><span class="keyword">int</span> b;</span><br><span class="line"><span class="keyword">int</span> c=a+b;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;c&lt;&lt;<span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a;</span><br><span class="line"><span class="keyword">int</span> b;</span><br><span class="line"><span class="keyword">int</span> c=a+b;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;c&lt;&lt;<span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
-
-<p>链接：<br><a href="my-new-post.md">这是一个链接</a><br>或者<br><a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a></p>
-<p>图片：<br><img src="../favicons/android-chrome-512x512.png" alt="图1" title="可选标题"></p>
-<p><img src="http://qiliu.zzqcool.cn/%E4%B8%8B%E8%BD%BD.jfif" alt="图2"></p>
-<img src=http://qiliu.zzqcool.cn/%E4%B8%8B%E8%BD%BD.jfif width=200 height=200>
-
-<p>表格：</p>
-<table>
-<thead>
-<tr>
-<th align="left">表头左对齐</th>
-<th align="right">表头</th>
-<th align="center">居中</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-<tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-</tbody></table>
-<p>转义：<br>**显示星号**</p>
+<h2 id="用Markdown生成幻灯片"><a href="#用Markdown生成幻灯片" class="headerlink" title="用Markdown生成幻灯片"></a>用Markdown生成幻灯片</h2><p>本博客的<a href="https://talk.bmpi.dev/" target="_blank" rel="noopener">Talk子域名</a>[^6]也是用Hugo的一个<a href="https://reveal-hugo.dzello.com/#/" target="_blank" rel="noopener">Slide主题</a>[^7]搭建，源码存放于这个<a href="https://github.com/bmpi-dev/talk.bmpi.dev" target="_blank" rel="noopener">GitHub仓库</a>[^8]。</p>
+<p><img src="https://img.bmpi.dev/hugo-slide-preview.gif" alt=""></p>
+<p>用Markdown写PPT的好处在于不需要耗费很多时间去排版，再次修改也是对纯文本的更改，缺点是你需要花一点时间（不超过一小时）去学习一些规则。我觉得这是一笔值得的投资，一次投资，终生受益。</p>
+<p>该主题还支持幻灯片导出成PDF格式。只需要加<code>?print-pdf</code>后缀到网址URL后面即可。</p>
+<h2 id="用Markdown生成专业报告"><a href="#用Markdown生成专业报告" class="headerlink" title="用Markdown生成专业报告"></a>用Markdown生成专业报告</h2><p><img src="https://img.bmpi.dev/dc89a01a-b143-3770-e848-4f3e35dbfd2b.png" alt=""></p>
+<p>如何用Markdown生成如上这种学术期刊类的报告呢？</p>
+<p>这需要我们做一些基本的设置，详细的安装设置可以参考我的笔记<a href="https://wiki.bmpi.dev/#%E4%BD%BF%E7%94%A8PanDoc%E5%B0%86Markdown%E8%BD%AC%E5%8C%96%E6%88%90Latex%E5%AD%A6%E6%9C%AF%E6%9C%9F%E5%88%8APDF%E6%A8%A1%E7%89%88" target="_blank" rel="noopener">《使用PanDoc将Markdown转化成Latex学术期刊PDF模版》</a>[^9]</p>
+<p>设置好后，可以按照下面的格式：</p>
+<p><img src="https://img.bmpi.dev/29853913-24d3-bc66-c540-0ba4f8ff7e6f.png" alt=""></p>
+<p>效果如下：</p>
+<p><img src="https://img.bmpi.dev/5f621ad7-6272-637f-f049-d72811cba39c.png" alt=""></p>
 
     </div>
 
@@ -349,7 +295,6 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/markdown/" rel="tag"># markdown</a>
-              <a href="/tags/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" rel="tag"># 基础语法</a>
           </div>
 
         
@@ -357,11 +302,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/04/17/%E5%BF%AB%E9%80%9F%E5%B9%82/" rel="next" title="快速幂">
-      快速幂 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/05/05/KMP%E7%AE%97%E6%B3%95/" rel="prev" title="KMP算法">
+      <i class="fa fa-chevron-left"></i> KMP算法
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -420,7 +365,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number">1.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">1.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">1.1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基于Markdown的工作流"><span class="nav-number">1.</span> <span class="nav-text">基于Markdown的工作流</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Markdown是什么"><span class="nav-number">1.1.</span> <span class="nav-text">Markdown是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Markdown工作流"><span class="nav-number">1.2.</span> <span class="nav-text">Markdown工作流</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用Markdown记录笔记"><span class="nav-number">2.</span> <span class="nav-text">用Markdown记录笔记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用Markdown生成博客"><span class="nav-number">3.</span> <span class="nav-text">用Markdown生成博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用Markdown生成幻灯片"><span class="nav-number">4.</span> <span class="nav-text">用Markdown生成幻灯片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用Markdown生成专业报告"><span class="nav-number">5.</span> <span class="nav-text">用Markdown生成专业报告</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
