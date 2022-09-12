@@ -1,56 +1,90 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    /* box-sizing: border-box; */
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 100vh;
-    margin: 0;
+    /* background-color: pink; */
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: pink;
+    height: 200px;
+    width: 400px;
+    /* background-color: #fff; */
 }
 
 .top {
     display: flex;
     position: relative;
     justify-content: space-between;
-    /* width: 100vw; */
-    height: 10px;
-    background-color: rgb(151, 184, 160);
-}
-
-.line {
-    width: 100%;
-    height: 6px;
-    background-color: #000;
+    align-items: center;
+    /* background-color: skyblue; */
+    height: 40px;
 }
 
 .circle {
-    position: absolute;
-    /* width: 18px;
-    height: 20px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    background-color: red;
-    text-align: center; */
-}
-
-.circle:nth-child(2) {
-    width: 20px;
-    border-radius: 50%;
-    /* color: #fff; */
     background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ccc;
+    transition: border-color 0.4s ease;
 }
 
+.active {
+    border: 3px solid skyblue;
+}
 
+.lineBack {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #ccc;
+    z-index: -1;
+}
+
+.line {
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    flex-grow: 1;
+    background-color: skyblue;
+    z-index: -1;
+}
 
 .bottom {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 50%; */
+    height: 60px;
+    /* background-color: pink; */
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: skyblue;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
 }
