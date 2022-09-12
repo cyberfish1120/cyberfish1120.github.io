@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* width: 50px; */
+    background-color: #fff;
+}
+
+input {
+    line-height: 48px;
+    font-size: 20px;
+    width: 0;
+    border: 0;
+    transition: width 0.3s linear;
+}
+
+.active {
+    width: 200px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.icon-sousuo {
+    width: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
