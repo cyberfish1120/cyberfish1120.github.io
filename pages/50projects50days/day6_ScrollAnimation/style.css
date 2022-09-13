@@ -7,6 +7,7 @@ body {
 
 div {
     display: flex;
+    visibility: hidden;
     justify-content: center;
     align-items: center;
     margin: 10px;
@@ -15,3 +16,39 @@ div {
     background-color: skyblue;
     border-radius: 5px;
 }
+
+@keyframes leftScrollIn {
+    from {
+        transform: translate(-300%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes rightScrollIn {
+    from {
+        transform: translate(300%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+/* @keyframes leftScrollOut {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-300%);
+    }
+}
+
+@keyframes rightScrollOut {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(300%);
+    }
+} */
