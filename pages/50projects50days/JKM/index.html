@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .green {
+            color: #27ad64;
+        }
+
+        .blue {
+            color: #0d9bf1;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            line-height: 6vh;
+            background-color: #fff;
+        }
+
+        .headLeft {}
+
+        .headRight {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .bg {
+            background-color: #27ad64;
+            height: 19vh;
+        }
+
+        .container {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            top: 8vh;
+            height: 80vh;
+            width: 94vw;
+            left: 3vw;
+            /* background-color: pink; */
+        }
+
+        .top {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-radius: 18px;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+        }
+
+        .data {
+            margin-top: 1vh;
+            width: 100%;
+            font-size: 34px;
+            font-weight: 500;
+        }
+
+        .time {
+            width: 100%;
+            font-size: 42px;
+            font-weight: 600;
+        }
+
+        hr {
+            width: 100%;
+            height: 1px;
+            margin: 0 3vw;
+        }
+
+        .plugin {
+            width: 100%;
+            position: relative;
+            left: 3vw;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .name {
+            font-weight: 600;
+        }
+
+        .show {
+            margin-top: 3px;
+            margin-left: 10px;
+            font-size: small;
+        }
+        .place, .supplement {
+            width: 100%;
+            font-weight: 600;
+        }
+        .QRCode {
+            width: 100%;
+            height: 40vw;
+            background-image: url(./images/QRCode.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 40%;
+        }
+        .scan {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            left: 36vw;
+            top: 15vh;
+            z-index: 10;
+            background: url(./images/scan.webp) no-repeat center/16%;
+        }
+        .middle {
+            display: flex;
+            width: 100%;
+            height: 15vh;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #fff;
+            margin-top: 2vh;
+            border-radius: 18px;
+        }
+        .middleLeft, .middleRight {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 40%;
+            height: 80%;
+            border-radius: 4px;
+        }
+        .middleLeft {
+            background: linear-gradient(45deg, #70abf9, #68d68f);
+            color: #fff; 
+        }
+
+        .middleRight p {
+            color: #8b8b8b;
+            font-size: 12px;
+        }
+
+        .middleRight div {
+            background-color: #009eff;
+            width: 88px;
+            border-radius: 20px;
+            text-align: center;
+            height: 26px;
+            line-height: 26px;
+            font-size: 14px;
+            color: #fff;
+        }
+        .border {
+            width: 1px;
+            height: 84%;
+            background-color: #eaebed;
+        }
+        .inTop {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .num {
+            font-size: 40px;   
+        }
+        .content {
+            margin-top: 8px;
+            margin-left: 8px;
+        }
+        .content div:nth-child(1){
+            font-size: 12px;
+        }
+
+        .inBottom {
+            width: 56%;
+            height: 22px;
+            line-height: 22px;
+            margin-top: -10px;
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .inBottom span {
+            font-size: 12px;
+            margin-left: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="headLeft">杭州市扫码通行</div>
+        <div class="headRight">
+            <div class="iconfont icon-wujiaoxing"></div>
+            <div class="iconfont icon-gengduo"></div>
+            <div class="iconfont icon-cuowuguanbiquxiao-xianxingyuankuang"></div>
+        </div>
+    </div>
+
+    <div class="bg"></div>
+
+    <div class="container">
+        <div class="top">
+            <div class="data green">10月02日</div>
+            <div class="time green">09:29:31</div>
+            <hr />
+            <div class="plugin">
+                <div class="name">赵*强</div>
+                <div class="show blue">显示</div>
+            </div>
+            <div class="place">文泽路站-文泽路站A口</div>
+            <div class="QRCode"></div>
+            <div class="supplement">杭州健康码</div>
+            <div class="green">已完成新冠疫苗接种</div>
+            <div class="scan"></div>
+        </div>
+        <div class="middle">
+            <div class="middleLeft">
+                <div class="inTop">
+                    <div class="num">2</div>
+                    <div class="content">
+                        <div>天内</div>
+                        <div>阴性</div>
+                    </div>
+                </div>
+                <div class="inBottom">核酸检测<span class="iconfont icon-youjiantou"></span></span></div>
+                
+            </div>
+            <div class="border"></div>
+            <div class="middleRight">
+                <h5>疫情重点地区核检</h5>
+                <p>7天内疫情重点地区记录</p>
+                <div>立即查看</div>
+            </div>
+        </div>
+        <div class="bottom">
+            这是底部
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
