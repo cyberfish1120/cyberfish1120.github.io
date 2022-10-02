@@ -15,6 +15,30 @@ body {
     background-color: #f0f0f0;
 }
 
+.mask {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.dialog {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50%;
+    height: 80px;
+    background-color: #fff;
+    /* z-index: 101; */
+}
+
 .head {
     display: flex;
     justify-content: space-between;
@@ -25,6 +49,7 @@ body {
 .headLeft {
     margin-left: 3vw;
     letter-spacing: 1px;
+    font-size: 20px;
 }
 
 .headRight {
@@ -36,12 +61,12 @@ body {
 }
 
 .headRight div {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .bg {
     background-color: #27ad64;
-    height: 19vh;
+    height: 20vh;
 }
 
 .container {
@@ -50,7 +75,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     top: 8vh;
-    height: 80vh;
+    /* height: 80vh; */
     width: 94vw;
     left: 3vw;
 }
@@ -68,20 +93,21 @@ body {
 .date {
     margin-top: 1vh;
     width: 100%;
-    font-size: 34px;
+    font-size: 42px;
     font-weight: 500;
 }
 
 .time {
     width: 100%;
-    font-size: 42px;
+    font-size: 50px;
     font-weight: 600;
 }
 
-hr {
+.line {
     width: 100%;
     height: 1px;
     margin: 0 3vw;
+    background-color: #ebebed;
 }
 
 .plugin {
@@ -115,6 +141,10 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40%;
+}
+
+.finish {
+    margin-bottom: 1vh;
 }
 
 .scan {
@@ -219,7 +249,7 @@ hr {
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
-    /* margin-top: 2vh; */
+    margin-top: 2vh;
     border-radius: 18px;
     font-weight: 600;
 }
@@ -253,6 +283,7 @@ hr {
     line-height: 30px;
     border-radius: 20px;
     text-align: center;
+    margin-top: 2vh;
 }
 
 .help span {
@@ -261,4 +292,5 @@ hr {
 
 p {
     color: #383838;
+    margin-top: 1vh;
 }

@@ -23,4 +23,20 @@ dateDom.innerText = mon + '月' + day + '日'
 setInterval(updateTime, 1000)
 
 
-let edit = document.querySelector('.icon-gengduo')
+const edit = document.querySelector('.icon-gengduo'),
+body = document.body, mask = document.querySelector('.mask')
+edit.addEventListener('touchend',()=>{
+    mask.style.display = 'block'
+})
+
+const nameDom = document.querySelector('#updateName')
+const placeDom = document.querySelector('#updatePlace')
+const confirmDom = document.querySelector('#confirm')
+const toName = document.querySelector('.name')
+const toPlace = document.querySelector('.place')
+
+confirmDom.addEventListener('touchend', ()=>{
+    toName.innerText = nameDom.value
+    toPlace.innerText = placeDom.value
+    mask.style.display = 'none'
+})
