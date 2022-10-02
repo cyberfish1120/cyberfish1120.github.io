@@ -5,12 +5,16 @@ function format(num) {
 }
 let date = new Date(),
     mon = format(date.getMonth() + 1),
-    day = format(date.getDate())
+    day = format(date.getDate()),
+    hour = format(date.getHours()),
+    min = format(date.getMinutes()),
+    sec = format(date.getSeconds())
 function updateTime() {
-    const hour = format(date.getHours())
-    const min = format(date.getMinutes())
-    const sec = format(date.getSeconds())
-    timeDom.innerHTML = hour + ':' + min + ':' + sec
+    date = new Date()
+    hour = format(date.getHours()),
+    min = format(date.getMinutes()),
+    sec = format(date.getSeconds())
+    timeDom.innerText = hour + ':' + min + ':' + sec
 }
 
 const dateDom = document.querySelector('.date'),
