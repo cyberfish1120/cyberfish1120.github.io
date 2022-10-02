@@ -19,7 +19,7 @@ function updateTime() {
 const dateDom = document.querySelector('.date'),
     timeDom = document.querySelector('.time')
 dateDom.innerText = mon + '月' + day + '日'
-setInterval(updateTime(), 1000)
+setInterval(updateTime, 1000)
 
 
 let edit = document.querySelector('.icon-gengduo')
