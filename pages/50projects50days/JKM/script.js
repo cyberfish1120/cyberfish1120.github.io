@@ -20,6 +20,7 @@ function updateTime() {
 const dateDom = document.querySelector('.date'),
     timeDom = document.querySelector('.time')
 dateDom.innerText = mon + '月' + day + '日'
+timeDom.innerText = hour + ':' + min + ':' + sec
 setInterval(updateTime, 1000)
 
 
