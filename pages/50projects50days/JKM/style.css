@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.green {
+    color: #27ad64;
+}
+
+.blue {
+    color: #0d9bf1;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    line-height: 6vh;
+    background-color: #fff;
+}
+
+.headLeft {
+    margin-left: 3vw;
+    letter-spacing: 1px;
+}
+
+.headRight {
+    display: flex;
+    justify-content: space-between;
+    width: 24%;
+    font-weight: 600;
+    margin-right: 3vw;
+}
+
+.headRight div {
+    font-size: 18px;
+}
+
+.bg {
+    background-color: #27ad64;
+    height: 19vh;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 8vh;
+    height: 80vh;
+    width: 94vw;
+    left: 3vw;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 18px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.data {
+    margin-top: 1vh;
+    width: 100%;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.time {
+    width: 100%;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    margin: 0 3vw;
+}
+
+.plugin {
+    width: 100%;
+    position: relative;
+    left: 3vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.show {
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: small;
+}
+
+.place,
+.supplement {
+    width: 100%;
+    font-weight: 600;
+}
+
+.QRCode {
+    width: 100%;
+    height: 40vw;
+    background-image: url(./images/QRCode.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+.scan {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 36vw;
+    top: 15vh;
+    z-index: 10;
+    background: url(./images/scan.webp) no-repeat center/16%;
+}
+
+.middle {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 2vh;
+    border-radius: 18px;
+}
+
+.middleLeft,
+.middleRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 80%;
+    border-radius: 4px;
+}
+
+.middleLeft,
+.help {
+    background: linear-gradient(45deg, #70abf9, #68d68f);
+    color: #fff;
+}
+
+.middleRight p {
+    color: #8b8b8b;
+    font-size: 12px;
+}
+
+.middleRight div {
+    background-color: #009eff;
+    width: 88px;
+    border-radius: 20px;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.border {
+    width: 1px;
+    height: 84%;
+    background-color: #eaebed;
+}
+
+.inTop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.num {
+    font-size: 40px;
+}
+
+.content {
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.content div:nth-child(1) {
+    font-size: 12px;
+}
+
+.inBottom {
+    width: 56%;
+    height: 22px;
+    line-height: 22px;
+    margin-top: -10px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.inBottom span {
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    /* margin-top: 2vh; */
+    border-radius: 18px;
+    font-weight: 600;
+}
+
+.bottomTop img {
+    width: 18px;
+    margin-right: 4px;
+}
+
+.bottomBottom {
+    font-weight: lighter;
+    font-size: 12px;
+    color: #8b8b8b;
+    margin-top: 6px;
+}
+
+.bottomRight {
+    width: 24%;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    color: #009eff;
+    border: #009eff solid 1px;
+    border-radius: 18px;
+}
+
+.help {
+    width: 100%;
+    margin: 0 25vw;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.help span {
+    margin-right: 14px;
+}
+
+p {
+    color: #383838;
+}
