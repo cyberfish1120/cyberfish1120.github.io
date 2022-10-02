@@ -36,7 +36,7 @@ const toName = document.querySelector('.name')
 const toPlace = document.querySelector('.place')
 
 confirmDom.addEventListener('touchend', ()=>{
-    toName.innerText = nameDom.value
-    toPlace.innerText = placeDom.value
+    if(nameDom.value) toName.innerText = nameDom.value
+    if(placeDom.value) toPlace.innerText = placeDom.value
     mask.style.display = 'none'
 })

@@ -99,7 +99,7 @@ body {
 
 .time {
     width: 100%;
-    font-size: 50px;
+    font-size: 52px;
     font-weight: 600;
 }
 
@@ -188,6 +188,7 @@ body {
 .middleRight p {
     color: #8b8b8b;
     font-size: 12px;
+    margin-top: -4px;
 }
 
 .middleRight div {
